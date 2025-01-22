@@ -91,6 +91,7 @@ export default function WelcomePage({ onContinue }: WelcomePageProps) {
             <div className="relative h-full min-h-[400px] md:min-h-[500px]">
               <img 
                 src="https://twinfinite.net/wp-content/uploads/2021/11/Apex-Legends-Loba-Edition.jpg?fit=1920%2C1080"
+                alt="Loba"
                 className="absolute inset-0 w-full h-full object-cover object-center"
               />
             </div>
