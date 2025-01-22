@@ -181,7 +181,7 @@ export const legends: Legend[] = [
       tactical: 'Perimeter Security - Electric fences',
       ultimate: 'Interception Pylon - Shield restore and ordnance defense'
     },
-    image: "https://liquipedia.net/commons/images/0/0a/Wattson_Banner.png"
+    image: "https://cdnb.artstation.com/p/assets/images/images/019/555/159/large/sam-sun-wattson-render-1pose-v0001.jpg?1564001412"
   },
   {
     id: 'crypto',
