@@ -23,9 +23,11 @@ export default function WelcomePage({ onContinue }: WelcomePageProps) {
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-purple-500">
               Welcome to Apex Legends
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-              Join the ultimate free-to-play hero shooter where legendary characters with powerful abilities team up to battle for fame and fortune on the fringes of the Frontier.
-            </p>
+            <div className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 space-y-6">
+              <p className="font-medium leading-relaxed">
+                Dive into the adrenaline-pumping world of <span className="text-red-400 font-bold">Apex Legends</span>, where every match is a fast-paced, high-stakes battle for survival! With a roster of diverse and charismatic legends, each with unique abilities, you'll find a character that matches your playstyle perfectly. Whether you crave heart-racing gunfights, clever team strategies, or epic plays, Apex delivers it all in stunning, ever-evolving arenas. It's not just a game—it's a chance to dominate, outsmart, and prove you're the ultimate champion. So, what are you waiting for? The Outlands are calling—time to answer!
+              </p>
+            </div>
             <button
               onClick={onContinue}
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-red-500 to-purple-500 text-white rounded-lg text-lg font-semibold hover:from-red-600 hover:to-purple-600 transition-all duration-200"
