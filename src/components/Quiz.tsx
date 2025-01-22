@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { personalityTraits } from '../data/legends';
 import { ChevronRight } from 'lucide-react';
 
