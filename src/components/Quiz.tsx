@@ -4,6 +4,8 @@ import { ChevronRight } from 'lucide-react';
 
 interface QuizProps {
   onComplete: (traits: string[]) => void;
+
+  onBack:() => void ;
 }
 
 const backgroundImages = [
