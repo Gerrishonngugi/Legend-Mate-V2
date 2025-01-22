@@ -42,7 +42,7 @@ export default function Quiz({ onComplete }: QuizProps) {
         className="fixed inset-0 transition-opacity duration-1000 ease-in-out bg-cover bg-center bg-no-repeat"
         style={{ 
           backgroundImage: `url(${backgroundImages[currentImageIndex]})`,
-          opacity: 0.15
+          opacity: 0.3
         }}
       />
 
