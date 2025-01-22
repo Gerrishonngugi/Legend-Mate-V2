@@ -1,20 +1,43 @@
 import { Gamepad2, Users, Trophy, ArrowRight } from 'lucide-react';
+import { useEffect, useState } from 'react';
 
 interface WelcomePageProps {
   onContinue: () => void;
 }
 
 export default function WelcomePage({ onContinue }: WelcomePageProps) {
+  const [opacity, setOpacity] = useState(1);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calculate opacity based on scroll position
+      const scrollPosition = window.scrollY;
+      const fadeStart = 0;
+      const fadeEnd = 400;
+      const newOpacity = 1 - Math.min(Math.max((scrollPosition - fadeStart) / (fadeEnd - fadeStart), 0), 1);
+      setOpacity(newOpacity);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800">
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <img 
-            src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&q=80&w=2070" 
-            alt="Gaming Background" 
-            className="w-full h-full object-cover opacity-20"
-          />
+          {/* Video Background */}
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+            style={{ opacity }}
+          >
+            <source src="/videos/apex-background.mp4" type="video/mp4" />
+          </video>
           <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 to-gray-900"></div>
         </div>
 
@@ -23,6 +46,7 @@ export default function WelcomePage({ onContinue }: WelcomePageProps) {
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-purple-500">
               Welcome to Apex Legends
             </h1>
+            {/* Rest of your existing content */}
             <div className="text-xl text-gray-300 max-w-4xl mx-auto mb-8 space-y-6">
               <p className="font-medium leading-relaxed">
                 Dive into the adrenaline-pumping world of <span className="text-red-400 font-bold">Apex Legends</span>, where every match is a fast-paced, high-stakes battle for survival! With a roster of diverse and charismatic legends, each with unique abilities, you'll find a character that matches your playstyle perfectly. Whether you crave heart-racing gunfights, clever team strategies, or epic plays, Apex delivers it all in stunning, ever-evolving arenas. It's not just a game—it's a chance to dominate, outsmart, and prove you're the ultimate champion. So, what are you waiting for? The Outlands are calling—time to answer!
