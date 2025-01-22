@@ -88,11 +88,11 @@ export default function WelcomePage({ onContinue }: WelcomePageProps) {
                 </div>
               </div>
             </div>
-            <div className="relative h-full min-h-[300px]">
+            <div className="relative h-full min-h-[400px] md:min-h-[500px]">
               <img 
                 src="https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-loba-xl.jpg.adapt.320w.jpg"
                 alt="Loba"
-                className="absolute inset-0 w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover object-center"
               />
             </div>
           </div>
