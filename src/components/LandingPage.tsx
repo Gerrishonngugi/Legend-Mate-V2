@@ -1,4 +1,3 @@
-import React from 'react';
 import { Gamepad2, Target, Users, Sword } from 'lucide-react';
 
 interface LandingPageProps {

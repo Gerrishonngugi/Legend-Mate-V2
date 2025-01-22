@@ -1,4 +1,3 @@
-import React from 'react';
 import { Gamepad2, Users, Trophy, ArrowRight } from 'lucide-react';
 
 interface WelcomePageProps {
