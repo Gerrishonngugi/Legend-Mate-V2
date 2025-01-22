@@ -7,10 +7,10 @@ interface QuizProps {
 }
 
 const backgroundImages = [
-  'https://images.unsplash.com/photo-1635322966219-b75ed372eb01?auto=format&fit=crop&q=80&w=1920', // Wraith
-  'https://images.unsplash.com/photo-1635322972164-d0594e0167c8?auto=format&fit=crop&q=80&w=1920', // Bloodhound
-  'https://images.unsplash.com/photo-1635322657566-c5dd0cb268ee?auto=format&fit=crop&q=80&w=1920', // Pathfinder
-  'https://images.unsplash.com/photo-1635322677011-83c0175120be?auto=format&fit=crop&q=80&w=1920', // Bangalore
+  'https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-wraith-xl.jpg.adapt.320w.jpg', // Wraith
+  'https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-grid-tile-legends-lifeline.png.adapt.crop16x9.1023w.png', // Bloodhound
+  'https://i.pinimg.com/736x/ff/d3/f3/ffd3f321b4526b138ee2f9818c66a21a.jpg', // Pathfinder
+  'https://preview.redd.it/lrz7xnjprh231.png?width=640&crop=smart&auto=webp&s=763eed9b39ae44389cc25c8bab928a7b5850d452', // Bangalore
 ];
 
 export default function Quiz({ onComplete }: QuizProps) {
