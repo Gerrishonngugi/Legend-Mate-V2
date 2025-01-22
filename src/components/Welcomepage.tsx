@@ -90,8 +90,7 @@ export default function WelcomePage({ onContinue }: WelcomePageProps) {
             </div>
             <div className="relative h-full min-h-[400px] md:min-h-[500px]">
               <img 
-                src="https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-loba-xl.jpg.adapt.320w.jpg"
-                alt="Loba"
+                src="https://twinfinite.net/wp-content/uploads/2021/11/Apex-Legends-Loba-Edition.jpg?fit=1920%2C1080"
                 className="absolute inset-0 w-full h-full object-cover object-center"
               />
             </div>
